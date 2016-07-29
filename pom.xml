@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0                              http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>de.invesdwin</groupId>
+	<artifactId>invesdwin-oss</artifactId>
+	<version>0.0.0-SNAPSHOT</version>
+	<packaging>pom</packaging>
+
+	<modules>
+        <!--eclipse repos are slow, thus skipping currently <module>invesdwin-checkstyle-plugin/invesdwin-checkstyle-plugin</module> -->
+		<module>invesdwin-bom/invesdwin-bom</module>
+        <module>invesdwin-maven-plugin/invesdwin-maven-plugin-parent</module>
+        <module>invesdwin-instrument/invesdwin-instrument</module>
+        <module>invesdwin-aspects/invesdwin-aspects</module>
+        <module>invesdwin-norva/invesdwin-norva</module>
+        <module>invesdwin-util/invesdwin-util</module>
+        <module>invesdwin-nowicket/invesdwin-nowicket-parent</module>
+        <module>invesdwin-context/invesdwin-context-parent</module>
+  </modules>
+
+</project>
