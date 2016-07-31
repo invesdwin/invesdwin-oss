@@ -3,4 +3,4 @@ The one project to build em all! Mostly just a simplification for the continuous
 
     git pull && git submodule update --init --recursive --remote
     
-Note that you can also put this into your .mrconfig to let [My Repos](https://myrepos.branchable.com/) handle updates properly for you.
+Note that you can also put this into your .mrconfig to let [myrepos](https://myrepos.branchable.com/) handle updates properly for you.
