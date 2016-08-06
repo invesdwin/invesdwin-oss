@@ -34,3 +34,7 @@
 	path = invesdwin-checkstyle-plugin
 	url = https://github.com/subes/invesdwin-checkstyle-plugin.git
 	branch = master
+[submodule "invesdwin-context-persistence"]
+	path = invesdwin-context-persistence
+	url = https://github.com/subes/invesdwin-context-persistence.git
+	branch = master
