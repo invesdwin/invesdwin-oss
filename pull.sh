@@ -8,10 +8,11 @@ do
   test -d "$dir" || continue
   cd $dir
   git stash
-  $stashed = $?
+  STASHED=$?
   git checkout master
   git pull
-  if [ $stashed -eq 0 ] then
+  if [ $STASHED == 0 ] 
+  then
     git stash pop
   fi
   cd ..
