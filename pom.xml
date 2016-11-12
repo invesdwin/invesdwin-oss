@@ -18,6 +18,7 @@
         <module>invesdwin-nowicket/invesdwin-nowicket-parent</module>
         <module>invesdwin-context/invesdwin-context-parent</module>
         <module>invesdwin-context-persistence/invesdwin-context-persistence-parent</module>
+        <module>invesdwin-context-security/invesdwin-context-security-parent</module>
   </modules>
   
   <distributionManagement>

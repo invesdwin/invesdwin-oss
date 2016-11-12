@@ -38,3 +38,7 @@
 	path = invesdwin-context-persistence
 	url = https://github.com/subes/invesdwin-context-persistence.git
 	branch = master
+[submodule "invesdwin-context-security"]
+	path = invesdwin-context-security
+	url = https://github.com/subes/invesdwin-context-security.git
+	branch = master
