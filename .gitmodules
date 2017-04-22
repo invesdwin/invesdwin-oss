@@ -45,4 +45,3 @@
 [submodule "invesdwin-context-integration"]
 	path = invesdwin-context-integration
 	url = https://github.com/subes/invesdwin-context-integration.git
-	branch = master
