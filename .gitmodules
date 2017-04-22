@@ -42,3 +42,7 @@
 	path = invesdwin-context-security
 	url = https://github.com/subes/invesdwin-context-security.git
 	branch = master
+[submodule "invesdwin-context-integration"]
+	path = invesdwin-context-integration
+	url = https://github.com/subes/invesdwin-context-integration.git
+	branch = master
