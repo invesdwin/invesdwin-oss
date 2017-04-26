@@ -20,6 +20,7 @@
         <module>invesdwin-context-integration/invesdwin-context-integration-parent</module>
         <module>invesdwin-context-persistence/invesdwin-context-persistence-parent</module>
         <module>invesdwin-context-security/invesdwin-context-security-parent</module>
+        <module>invesdwin-context-rintegrate/invesdwin-context-rintegrate-parent</module>
   </modules>
   
   <distributionManagement>
