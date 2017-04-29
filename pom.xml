@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0                              http://maven.apache.org/maven-v4_0_0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0                              http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>de.invesdwin</groupId>
@@ -8,32 +9,45 @@
 	<packaging>pom</packaging>
 
 	<modules>
-        <!--eclipse repos are slow, thus skipping currently <module>invesdwin-checkstyle-plugin/invesdwin-checkstyle-plugin</module> -->
+		<!--eclipse repos are slow, thus skipping currently <module>invesdwin-checkstyle-plugin/invesdwin-checkstyle-plugin</module> -->
 		<module>invesdwin-bom/invesdwin-bom</module>
-        <module>invesdwin-maven-plugin/invesdwin-maven-plugin-parent</module>
-        <module>invesdwin-instrument/invesdwin-instrument</module>
-        <module>invesdwin-aspects/invesdwin-aspects</module>
-        <module>invesdwin-norva/invesdwin-norva</module>
-        <module>invesdwin-util/invesdwin-util</module>
-        <module>invesdwin-nowicket/invesdwin-nowicket-parent</module>
-        <module>invesdwin-context/invesdwin-context-parent</module>
-        <module>invesdwin-context-integration/invesdwin-context-integration-parent</module>
-        <module>invesdwin-context-persistence/invesdwin-context-persistence-parent</module>
-        <module>invesdwin-context-security/invesdwin-context-security-parent</module>
-        <module>invesdwin-context-rintegrate/invesdwin-context-rintegrate-parent</module>
-  </modules>
-  
-  <distributionManagement>
+		<module>invesdwin-maven-plugin/invesdwin-maven-plugin-parent</module>
+		<module>invesdwin-instrument/invesdwin-instrument</module>
+		<module>invesdwin-aspects/invesdwin-aspects</module>
+		<module>invesdwin-norva/invesdwin-norva</module>
+		<module>invesdwin-util/invesdwin-util</module>
+		<module>invesdwin-nowicket/invesdwin-nowicket-parent</module>
+		<module>invesdwin-context/invesdwin-context-parent</module>
+		<module>invesdwin-context-integration/invesdwin-context-integration-parent</module>
+		<module>invesdwin-context-persistence/invesdwin-context-persistence-parent</module>
+		<module>invesdwin-context-security/invesdwin-context-security-parent</module>
+		<module>invesdwin-context-rintegrate/invesdwin-context-rintegrate-parent</module>
+	</modules>
+
+	<distributionManagement>
 		<repository>
 			<id>central</id>
 			<name>invesdwin.de-releases</name>
-			<url>http://invesdwin.de/artifactory/invesdwin-oss-remote</url>
+			<url>http://invesdwin.de/artifactory/invesdwin-oss</url>
 		</repository>
 		<snapshotRepository>
 			<id>snapshots</id>
 			<name>invesdwin.de-snapshots</name>
-			<url>http://invesdwin.de/artifactory/invesdwin-oss-remote</url>
+			<url>http://invesdwin.de/artifactory/invesdwin-oss</url>
 		</snapshotRepository>
 	</distributionManagement>
+
+	<repositories>
+		<repository>
+			<id>invesdwin-oss</id>
+			<url>http://invesdwin.de/artifactory/invesdwin-oss-remote</url>
+		</repository>
+	</repositories>
+	<pluginRepositories>
+		<pluginRepository>
+			<id>invesdwin-oss</id>
+			<url>http://invesdwin.de/artifactory/invesdwin-oss-remote</url>
+		</pluginRepository>
+	</pluginRepositories>
 
 </project>
