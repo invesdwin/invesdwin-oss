@@ -45,6 +45,3 @@
 [submodule "invesdwin-context-integration"]
 	path = invesdwin-context-integration
 	url = https://github.com/subes/invesdwin-context-integration.git
-[submodule "invesdwin-context-rintegrate"]
-	path = invesdwin-context-rintegrate
-	url = https://github.com/subes/invesdwin-context-rintegrate.git
