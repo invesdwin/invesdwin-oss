@@ -7,4 +7,5 @@ mvn clean deploy -DskipTests -U -N -e -f invesdwin-context-integration/invesdwin
 mvn clean deploy -DskipTests -U -N -e -f invesdwin-context-persistence/invesdwin-context-persistence-parent/pom.xml
 mvn clean deploy -DskipTests -U -N -e -f invesdwin-context-security/invesdwin-context-security-parent/pom.xml
 mvn clean deploy -DskipTests -U -N -e -f invesdwin-context-r/invesdwin-context-r-parent/pom.xml
+mvn clean deploy -DskipTests -U -N -e -f invesdwin-context-python/invesdwin-context-python-parent/pom.xml
 mvn clean deploy -DskipTests -T1C -U -e
