@@ -23,6 +23,7 @@
 		<module>invesdwin-context-security/invesdwin-context-security-parent</module>
 		<module>invesdwin-context-r/invesdwin-context-r-parent</module>
 		<module>invesdwin-context-python/invesdwin-context-python-parent</module>
+		<module>invesdwin-context-client/invesdwin-context-client-parent</module>
 	</modules>
 
 	<distributionManagement>

@@ -51,3 +51,6 @@
 [submodule "invesdwin-context-python"]
 	path = invesdwin-context-python
 	url = https://github.com/subes/invesdwin-context-python.git
+[submodule "invesdwin-context-client"]
+	path = invesdwin-context-client
+	url = https://github.com/subes/invesdwin-context-client.git
