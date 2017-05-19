@@ -18,6 +18,9 @@
 		<module>invesdwin-util/invesdwin-util</module>
 		<module>invesdwin-nowicket/invesdwin-nowicket-parent</module>
 		<module>invesdwin-context/invesdwin-context-parent</module>
+		<module>invesdwin-context/tests/otherproject-test-parent</module>
+		<module>invesdwin-context/tests/otherproject-noparent-test</module>
+		<module>invesdwin-context/tests/otherproject-noparent-bom-test</module>
 		<module>invesdwin-context-integration/invesdwin-context-integration-parent</module>
 		<module>invesdwin-context-persistence/invesdwin-context-persistence-parent</module>
 		<module>invesdwin-context-security/invesdwin-context-security-parent</module>
