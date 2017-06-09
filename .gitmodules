@@ -54,3 +54,6 @@
 [submodule "invesdwin-context-client"]
 	path = invesdwin-context-client
 	url = https://github.com/subes/invesdwin-context-client.git
+[submodule "invesdwin-webproxy"]
+	path = invesdwin-webproxy
+	url = https://github.com/subes/invesdwin-webproxy.git

@@ -9,4 +9,5 @@ mvn clean deploy -DskipTests -U -N -e -f invesdwin-context-security/invesdwin-co
 mvn clean deploy -DskipTests -U -N -e -f invesdwin-context-r/invesdwin-context-r-parent/pom.xml
 mvn clean deploy -DskipTests -U -N -e -f invesdwin-context-python/invesdwin-context-python-parent/pom.xml
 mvn clean deploy -DskipTests -U -N -e -f invesdwin-context-client/invesdwin-context-client-parent/pom.xml
+mvn clean deploy -DskipTests -U -N -e -f invesdwin-webproxy/invesdwin-webproxy-parent/pom.xml
 mvn clean deploy -DskipTests -T1C -U -e
