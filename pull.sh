@@ -5,7 +5,7 @@ git submodule update --init --recursive --remote
 
 for dir in *
 do
-  test "dependencies" = "$dir" || continue
+  test "dependencies" = "$dir" && continue
   test -d "$dir" || continue
   echo -- $dir
   cd $dir
@@ -33,5 +33,6 @@ fi
   cd ..
 done
 
-dependencies/pull.sh
+cd dependencies
+./pull.sh
 

@@ -4,7 +4,7 @@ git push
 
 for dir in *
 do
-  test "dependencies" = "$dir" || continue
+  test "dependencies" = "$dir" && continue
   test -d "$dir" || continue
   echo -- $dir
   cd $dir
@@ -13,4 +13,5 @@ do
   cd ..
 done
 
-dependencies/push.sh
+cd dependencies
+./push.sh
