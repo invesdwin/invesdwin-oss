@@ -1,7 +1,5 @@
 #! /bin/bash
 
-git push
-
 for dir in *
 do
   test "dependencies" = "$dir" || continue
@@ -12,5 +10,3 @@ do
   git push
   cd ..
 done
-
-dependencies/push.sh

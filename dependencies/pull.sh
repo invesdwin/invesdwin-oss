@@ -1,8 +1,5 @@
 #! /bin/bash
 
-git pull
-git submodule update --init --recursive --remote
-
 for dir in *
 do
   test "dependencies" = "$dir" || continue
@@ -32,6 +29,3 @@ fi
   fi
   cd ..
 done
-
-dependencies/pull.sh
-
