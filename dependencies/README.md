@@ -1,1 +1,1 @@
-asf
+These are dependencies that have not made it into a public maven repository or which have not fully incorporated our pull requests. So we track them here so we don't forget from which code our own jars originate from.
