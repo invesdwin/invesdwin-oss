@@ -63,9 +63,6 @@
 [submodule "dependencies/jdeoptim"]
 	path = dependencies/jdeoptim
 	url = https://github.com/subes/jdeoptim.git
-[submodule "dependencies/BinaryOffheapHashMap"]
-	path = dependencies/BinaryOffheapHashMap
-	url = https://github.com/subes/BinaryOffheapHashMap.git
 [submodule "dependencies/license-check"]
 	path = dependencies/license-check
 	url = https://github.com/subes/license-check.git
