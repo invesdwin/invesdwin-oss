@@ -6,5 +6,3 @@ These are dependencies that have not made it into a public maven repository or w
     - Performance optimizations and parallelization support.
 - **license-check**: Pull request is not being merged.
     - Bugfix for recognizing different flavors of GPL properly.
-- **BinaryOffheapHashMap**: No official release, needs to be built manually with Netbeans.
-    - No changes.
