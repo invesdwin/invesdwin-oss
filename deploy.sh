@@ -14,13 +14,15 @@ echo "-- invesdwin-norva"
 mvn clean deploy -DskipTests -T1C -e -f invesdwin-norva/invesdwin-norva/pom.xml
 echo "-- invesdwin-util"
 mvn clean deploy -DskipTests -T1C -e -f invesdwin-util/invesdwin-util/pom.xml
-echo "-- invesdwin-nowicket"
-mvn clean deploy -DskipTests -T1C -e -f invesdwin-nowicket/invesdwin-nowicket-parent/pom.xml
+echo "-- invesdwin-nowicket-parent pom"
+mvn clean deploy -DskipTests -T1C -N -e -f invesdwin-nowicket/invesdwin-nowicket-parent/pom.xml
 echo "-- invesdwin-context"
 mvn clean deploy -DskipTests -T1C -e -f invesdwin-context/invesdwin-context-parent/pom.xml
 mvn clean deploy -DskipTests -T1C -e -f invesdwin-context/tests/otherproject-test-parent/pom.xml
 mvn clean deploy -DskipTests -T1C -e -f invesdwin-context/tests/otherproject-noparent-test/pom.xml
 mvn clean deploy -DskipTests -T1C -e -f invesdwin-context/tests/otherproject-noparent-bom-test/pom.xml
+echo "-- invesdwin-nowicket"
+mvn clean deploy -DskipTests -T1C -e -f invesdwin-nowicket/invesdwin-nowicket-parent/pom.xml
 echo "-- invesdwin-context-integration"
 mvn clean deploy -DskipTests -T1C -e -f invesdwin-context-integration/invesdwin-context-integration-parent/pom.xml
 echo "-- invesdwin-context-persistence"
