@@ -66,3 +66,6 @@
 [submodule "dependencies/license-check"]
 	path = dependencies/license-check
 	url = https://github.com/subes/license-check.git
+[submodule "dependencies/javaoctave"]
+	path = dependencies/javaoctave
+	url = https://github.com/subes/javaoctave.git
