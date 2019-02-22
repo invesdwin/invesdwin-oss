@@ -66,3 +66,6 @@
 [submodule "dependencies/javaoctave"]
 	path = dependencies/javaoctave
 	url = https://github.com/subes/javaoctave.git
+[submodule "dependencies/ezdb"]
+	path = dependencies/ezdb
+	url = https://github.com/criccomini/ezdb.git
