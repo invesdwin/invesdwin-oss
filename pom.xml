@@ -15,7 +15,7 @@
 		<module>invesdwin-instrument/invesdwin-instrument</module>
 		<module>invesdwin-aspects/invesdwin-aspects</module>
 		<module>invesdwin-norva/invesdwin-norva</module>
-		<module>invesdwin-util/invesdwin-util</module>
+		<module>invesdwin-util/invesdwin-util-parent</module>
 		<module>invesdwin-nowicket/invesdwin-nowicket-parent</module>
 		<module>invesdwin-context/invesdwin-context-parent</module>
 		<module>invesdwin-context/tests/otherproject-test-parent</module>
