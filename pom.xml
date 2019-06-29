@@ -17,7 +17,7 @@
 		<module>invesdwin-norva/invesdwin-norva</module>
 		<module>invesdwin-util/invesdwin-util-parent</module>
 		<module>invesdwin-nowicket/invesdwin-nowicket-parent</module>
-		<module>invesdwin-nowicket/invesdwin-nowicket-parent/invesdwin-nowicket-examples/granatasoft-remotelist-parent</module>
+		<module>invesdwin-nowicket/invesdwin-nowicket-parent/invesdwin-nowicket-examples</module>
 		<module>invesdwin-context/invesdwin-context-parent</module>
 		<module>invesdwin-context/tests/otherproject-test-parent</module>
 		<module>invesdwin-context/tests/otherproject-noparent-test</module>
