@@ -69,3 +69,6 @@
 [submodule "dependencies/ezdb"]
 	path = dependencies/ezdb
 	url = https://github.com/criccomini/ezdb.git
+[submodule "dependencies/jdeoptim"]
+	path = dependencies/jdeoptim
+	url = https://github.com/subes/jdeoptim.git
