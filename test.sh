@@ -26,4 +26,4 @@ mvn -B clean install -DskipTests -N -e -f invesdwin-context-client/invesdwin-con
 echo "-- invesdwin-webproxy-parent"
 mvn -B clean install -DskipTests -N -e -f invesdwin-webproxy/invesdwin-webproxy-parent/pom.xml
 echo "-- build all"
-mvn -B clean install -Pjacoco -T4 -e
+mvn -B clean install -Pjacoco -T4 -e -Dmaven.test.failure.ignore=true
