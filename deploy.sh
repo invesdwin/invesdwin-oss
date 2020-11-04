@@ -26,4 +26,4 @@ mvn -B clean deploy -DskipTests -N -e -f invesdwin-context-client/invesdwin-cont
 echo "-- invesdwin-webproxy-parent"
 mvn -B clean deploy -DskipTests -N -e -f invesdwin-webproxy/invesdwin-webproxy-parent/pom.xml
 echo "-- build all"
-mvn -B clean deploy -DskipTests -T1C -e
+mvn -B clean deploy -DskipTests -T4 -e
