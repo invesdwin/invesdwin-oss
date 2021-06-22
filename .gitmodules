@@ -72,3 +72,6 @@
 [submodule "dependencies/jdeoptim"]
 	path = dependencies/jdeoptim
 	url = https://github.com/subes/jdeoptim.git
+[submodule "dependencies/pom-explorer"]
+	path = dependencies/pom-explorer
+	url = https://github.com/subes/pom-explorer.git
