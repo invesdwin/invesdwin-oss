@@ -75,3 +75,6 @@
 [submodule "dependencies/pom-explorer"]
 	path = dependencies/pom-explorer
 	url = https://github.com/subes/pom-explorer.git
+[submodule "dependencies/juliacaller"]
+	path = dependencies/juliacaller
+	url = https://github.com/subes/juliacaller.git
