@@ -1,68 +1,68 @@
 [submodule "invesdwin-context"]
 	path = invesdwin-context
-	url = https://github.com/subes/invesdwin-context.git
+	url = https://github.com/invesdwin/invesdwin-context.git
 	branch = master
 [submodule "invesdwin-bom"]
 	path = invesdwin-bom
-	url = https://github.com/subes/invesdwin-bom.git
+	url = https://github.com/invesdwin/invesdwin-bom.git
 	branch = master
 [submodule "invesdwin-maven-plugin"]
 	path = invesdwin-maven-plugin
-	url = https://github.com/subes/invesdwin-maven-plugin.git
+	url = https://github.com/invesdwin/invesdwin-maven-plugin.git
 	branch = master
 [submodule "invesdwin-util"]
 	path = invesdwin-util
-	url = https://github.com/subes/invesdwin-util.git
+	url = https://github.com/invesdwin/invesdwin-util.git
 	branch = master
 [submodule "invesdwin-nowicket"]
 	path = invesdwin-nowicket
-	url = https://github.com/subes/invesdwin-nowicket.git
+	url = https://github.com/invesdwin/invesdwin-nowicket.git
 	branch = master
 [submodule "invesdwin-norva"]
 	path = invesdwin-norva
-	url = https://github.com/subes/invesdwin-norva.git
+	url = https://github.com/invesdwin/invesdwin-norva.git
 	branch = master
 [submodule "invesdwin-aspects"]
 	path = invesdwin-aspects
-	url = https://github.com/subes/invesdwin-aspects.git
+	url = https://github.com/invesdwin/invesdwin-aspects.git
 	branch = master
 [submodule "invesdwin-instrument"]
 	path = invesdwin-instrument
-	url = https://github.com/subes/invesdwin-instrument.git
+	url = https://github.com/invesdwin/invesdwin-instrument.git
 	branch = master
 [submodule "invesdwin-checkstyle-plugin"]
 	path = invesdwin-checkstyle-plugin
-	url = https://github.com/subes/invesdwin-checkstyle-plugin.git
+	url = https://github.com/invesdwin/invesdwin-checkstyle-plugin.git
 	branch = master
 [submodule "invesdwin-context-persistence"]
 	path = invesdwin-context-persistence
-	url = https://github.com/subes/invesdwin-context-persistence.git
+	url = https://github.com/invesdwin/invesdwin-context-persistence.git
 	branch = master
 [submodule "invesdwin-context-security"]
 	path = invesdwin-context-security
-	url = https://github.com/subes/invesdwin-context-security.git
+	url = https://github.com/invesdwin/invesdwin-context-security.git
 	branch = master
 [submodule "invesdwin-context-integration"]
 	path = invesdwin-context-integration
-	url = https://github.com/subes/invesdwin-context-integration.git
+	url = https://github.com/invesdwin/invesdwin-context-integration.git
 [submodule "invesdwin-context-r"]
 	path = invesdwin-context-r
-	url = https://github.com/subes/invesdwin-context-r.git
+	url = https://github.com/invesdwin/invesdwin-context-r.git
 [submodule "invesdwin-context-python"]
 	path = invesdwin-context-python
-	url = https://github.com/subes/invesdwin-context-python.git
+	url = https://github.com/invesdwin/invesdwin-context-python.git
 [submodule "invesdwin-context-julia"]
 	path = invesdwin-context-julia
-	url = https://github.com/subes/invesdwin-context-julia.git
+	url = https://github.com/invesdwin/invesdwin-context-julia.git
 [submodule "invesdwin-context-client"]
 	path = invesdwin-context-client
-	url = https://github.com/subes/invesdwin-context-client.git
+	url = https://github.com/invesdwin/invesdwin-context-client.git
 [submodule "invesdwin-webproxy"]
 	path = invesdwin-webproxy
-	url = https://github.com/subes/invesdwin-webproxy.git
+	url = https://github.com/invesdwin/invesdwin-webproxy.git
 [submodule "invesdwin-context-matlab"]
 	path = invesdwin-context-matlab
-	url = https://github.com/subes/invesdwin-context-matlab.git
+	url = https://github.com/invesdwin/invesdwin-context-matlab.git
 [submodule "dependencies/license-check"]
 	path = dependencies/license-check
 	url = https://github.com/subes/license-check.git
