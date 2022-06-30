@@ -87,3 +87,9 @@
 [submodule "dependencies/fast-serialization"]
 	path = dependencies/fast-serialization
 	url = https://github.com/subes/fast-serialization.git
+[submodule "dependencies/t-digest"]
+	path = dependencies/t-digest
+	url = https://github.com/subes/t-digest.git
+[submodule "dependencies/DockingFrames"]
+	path = dependencies/DockingFrames
+	url = https://github.com/subes/DockingFrames.git

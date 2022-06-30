@@ -28,3 +28,8 @@ fi
   fi
   cd ..
 done
+
+cd fast-serialization/
+git switch -c java8backport origin/java8backport
+git checkout java8backport
+cd ../

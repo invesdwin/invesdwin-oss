@@ -9,12 +9,12 @@ echo "-- invesdwin-nowicket-parent"
 mvn -B clean deploy -DskipTests -N -e -f invesdwin-nowicket/invesdwin-nowicket-parent/pom.xml
 echo "-- invesdwin-context-parent"
 mvn -B clean deploy -DskipTests -N -e -f invesdwin-context/invesdwin-context-parent/pom.xml
-echo "-- invesdwin-context-integration-parent"
-mvn -B clean deploy -DskipTests -N -e -f invesdwin-context-integration/invesdwin-context-integration-parent/pom.xml
 echo "-- invesdwin-context-persistence-parent"
 mvn -B clean deploy -DskipTests -N -e -f invesdwin-context-persistence/invesdwin-context-persistence-parent/pom.xml
 echo "-- invesdwin-context-security-parent"
 mvn -B clean deploy -DskipTests -N -e -f invesdwin-context-security/invesdwin-context-security-parent/pom.xml
+echo "-- invesdwin-context-integration-parent"
+mvn -B clean deploy -DskipTests -N -e -f invesdwin-context-integration/invesdwin-context-integration-parent/pom.xml
 echo "-- invesdwin-context-r-parent"
 mvn -B clean deploy -DskipTests -N -e -f invesdwin-context-r/invesdwin-context-r-parent/pom.xml
 echo "-- invesdwin-context-python-parent"
