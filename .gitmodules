@@ -84,3 +84,6 @@
 [submodule "dependencies/maven-enforcer"]
 	path = dependencies/maven-enforcer
 	url = https://github.com/subes/maven-enforcer.git
+[submodule "dependencies/fast-serialization"]
+	path = dependencies/fast-serialization
+	url = https://github.com/subes/fast-serialization.git
