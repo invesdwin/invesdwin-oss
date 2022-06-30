@@ -81,3 +81,6 @@
 [submodule "dependencies/juliacaller"]
 	path = dependencies/juliacaller
 	url = https://github.com/subes/juliacaller.git
+[submodule "dependencies/maven-enforcer"]
+	path = dependencies/maven-enforcer
+	url = https://github.com/subes/maven-enforcer.git
