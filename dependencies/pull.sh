@@ -18,7 +18,14 @@ fi
     git stash
   fi
   echo -- $dir -- checking out master
-  git checkout master
+  if [ $dir == "fast-serialization" ]
+  then
+    git switch -c java8backport origin/java8backport
+    git checkout java8backport
+  
+  else
+    git checkout master || git checkout main
+  fi
   echo -- $dir -- pulling
   git pull
   if [ $LOCALCHANGES == 1 ]
@@ -28,8 +35,3 @@ fi
   fi
   cd ..
 done
-
-cd fast-serialization/
-git switch -c java8backport origin/java8backport
-git checkout java8backport
-cd ../
