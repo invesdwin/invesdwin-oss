@@ -18,7 +18,7 @@ fi
     git stash
   fi
   echo -- $dir -- checking out master
-  #git checkout master
+  git checkout master
   echo -- $dir -- pulling
   git pull
   if [ $LOCALCHANGES == 1 ]
