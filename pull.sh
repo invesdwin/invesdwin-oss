@@ -1,5 +1,7 @@
 #! /bin/bash
 
+cd "$(dirname "$0")"
+
 git pull
 #https://stackoverflow.com/questions/10168449/git-update-submodules-recursively
 git submodule init
