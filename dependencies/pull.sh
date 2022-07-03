@@ -24,7 +24,7 @@ fi
     git checkout java8backport
   
   else
-    git checkout master || git checkout main
+    git checkout $(git rev-parse --abbrev-ref HEAD)
   fi
   echo -- $dir -- pulling
   git pull
