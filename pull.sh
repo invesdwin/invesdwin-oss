@@ -6,7 +6,7 @@ git pull
 #https://stackoverflow.com/questions/10168449/git-update-submodules-recursively
 git submodule init
 git submodule update
-git submodule foreach 'git fetch origin; git checkout $(git rev-parse --abbrev-ref HEAD); git submodule update --recursive'
+git submodule foreach 'git fetch origin; git checkout master || git checkout main; git submodule update --recursive'
 
 
 for dir in *
