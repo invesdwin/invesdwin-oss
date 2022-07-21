@@ -9,6 +9,29 @@ cd "$(dirname "$0")"
 #  you might have to delete the <repositories> and <pluginRepositories> tags from all pom.xml files 
 #  so that all references to invesdwin-oss-remote and invesdwin-oss repository are removed
 
+#https://stackoverflow.com/questions/7334754/correct-way-to-check-java-version-from-bash-script
+if type -p java; then
+    echo found java executable in PATH
+    _java=java
+elif [[ -n "$JAVA_HOME" ]] && [[ -x "$JAVA_HOME/bin/java" ]];  then
+    echo found java executable in JAVA_HOME
+    _java="$JAVA_HOME/bin/java"
+else
+    echo "no java"
+fi
+
+if [[ "$_java" ]]; then
+    version=$("$_java" -version 2>&1 | awk -F '"' '/version/ {print $2}')
+    echo version "$version"
+    if [[ "$version" = "1.8" ]]; then
+        JAVA8="true"
+    else
+        echo "WARNING: skipping projects in build that require java 1.8 to build without errors"
+        JAVA8="false"
+    fi
+fi
+
+
 echo "-- maven-enforcer"
 cd dependencies/maven-enforcer
 mvn clean install -DskipTests -T1C
@@ -22,10 +45,12 @@ cd ../../
 
 # WARNING: make sure a java 8 version is both in PATH and JAVA_HOME
 # otherwise compilation will fail with sun.misc.Cleaner not being found
-echo "-- fast-serialization"
-cd dependencies/fast-serialization/
-mvn clean install -DskipTests -T1C
-cd ../../
+if [[ "$JAVA8" = "true" ]]; then
+    echo "-- fast-serialization"
+    cd dependencies/fast-serialization/
+    mvn clean install -DskipTests -T1C
+    cd ../../
+fi
 
 echo "-- t-digest"
 cd dependencies/t-digest/
@@ -34,10 +59,12 @@ cd ../../
 
 # WARNING: make sure a java 8 version is both in PATH and JAVA_HOME
 # otherwise compilation will fail due to tools.jar not being found
-echo "-- DockingFrames"
-cd dependencies/DockingFrames/
-mvn clean install -DskipTests -T1C
-cd ../../
+if [[ "$JAVA8" = "true" ]]; then
+    echo "-- DockingFrames"
+    cd dependencies/DockingFrames/
+    mvn clean install -DskipTests -T1C
+    cd ../../
+fi
 
 echo "-- invesdwin-bom"
 mvn clean install -DskipTests -N -e -f invesdwin-bom/invesdwin-bom/pom.xml
