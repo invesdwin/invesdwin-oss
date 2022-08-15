@@ -4,7 +4,7 @@ cd "$(dirname "$0")"
 
 git pull
 #https://stackoverflow.com/questions/10168449/git-update-submodules-recursively
-git submodule update --init
+git submodule update --init --remote
 git submodule foreach 'git fetch origin; git checkout master || git checkout main; git submodule update --init --recursive'
 
 
