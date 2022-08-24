@@ -23,8 +23,8 @@ fi
     echo -- $dir -- stashing
     git stash
   fi
-  echo -- $dir -- checking out master@{$DATE}
-  git checkout "master@{$DATE}"
+  echo -- $dir -- checking out $DATE
+  git checkout $DATE
   echo -- $dir -- pulling
   git pull
   if [ $LOCALCHANGES == 1 ]
