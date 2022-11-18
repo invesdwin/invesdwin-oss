@@ -93,3 +93,6 @@
 [submodule "dependencies/DockingFrames"]
 	path = dependencies/DockingFrames
 	url = https://github.com/subes/DockingFrames.git
+[submodule "dependencies/dynamicreports"]
+	path = dependencies/dynamicreports
+	url = https://github.com/subes/dynamicreports.git

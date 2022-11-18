@@ -66,8 +66,8 @@ if [[ "$JAVA8" = "true" ]]; then
     cd ../../
 fi
 
-echo "-- jasperreports"
-cd dependencies/jasperreports/
+echo "-- dynamicreports"
+cd dependencies/dynamicreports/
 mvn clean install -DskipTests -T1C
 cd ../../
 
