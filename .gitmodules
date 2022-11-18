@@ -93,3 +93,6 @@
 [submodule "dependencies/DockingFrames"]
 	path = dependencies/DockingFrames
 	url = https://github.com/subes/DockingFrames.git
+[submodule "dependencies/jasperreports"]
+	path = dependencies/jasperreports
+	url = https://github.com/subes/jasperreports.git
