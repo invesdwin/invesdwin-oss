@@ -3,7 +3,7 @@
 cd "$(dirname "$0")"
 
 #DATE='master@{2022-08-01 00:00:00}'
-DATE=$1
+DATE="$1"
 
 for dir in *
 do
@@ -23,8 +23,8 @@ fi
     echo -- $dir -- stashing
     git stash
   fi
-  echo -- $dir -- checking out $DATE
-  git checkout $DATE
+  echo -- $dir -- checking out "$DATE"
+  git checkout "$DATE"
   echo -- $dir -- pulling
   git pull
   if [ $LOCALCHANGES == 1 ]
