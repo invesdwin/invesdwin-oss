@@ -2,7 +2,7 @@
 
 cd "$(dirname "$0")"
 
-#DATE='master@{2022-08-01 00:00:00}'
+#DATE='2022-08-01 00:00:00'
 DATE="$1"
 
 for dir in *
@@ -23,8 +23,9 @@ fi
     echo -- $dir -- stashing
     git stash
   fi
-  echo -- $dir -- checking out "$DATE"
-  git checkout "$DATE"
+  REV=$(git rev-list -n 1 --before="$DATE" master)
+  echo -- $dir -- checking out "$DATE" as "$REV"
+  git checkout $REV
   echo -- $dir -- pulling
   git pull
   if [ $LOCALCHANGES == 1 ]
