@@ -13,7 +13,7 @@
 		<!--<module>dependencies/ezdb</module>-->
 		<module>invesdwin-bom/invesdwin-bom</module>
 		<module>invesdwin-maven-plugin/invesdwin-maven-plugin-parent</module>
-		<module>invesdwin-instrument/invesdwin-instrument</module>
+		<module>invesdwin-instrument/invesdwin-instrument-parent</module>
 		<module>invesdwin-aspects/invesdwin-aspects</module>
 		<module>invesdwin-norva/invesdwin-norva</module>
 		<module>invesdwin-util/invesdwin-util-parent</module>
