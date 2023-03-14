@@ -96,3 +96,6 @@
 [submodule "dependencies/dynamicreports"]
 	path = dependencies/dynamicreports
 	url = https://github.com/subes/dynamicreports.git
+[submodule "dependencies/sardine"]
+	path = dependencies/sardine
+	url = https://github.com/subes/sardine.git
