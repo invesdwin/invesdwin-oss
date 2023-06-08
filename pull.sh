@@ -3,7 +3,7 @@
 cd "$(dirname "$0")"
 
 git pull
-git submodule update --init --recursive --remote --rebase
+git submodule init
 
 OUTER_BRANCH=$(git branch --show-current)
 if [ -z "$OUTER_BRANCH" ]
