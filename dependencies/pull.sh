@@ -11,13 +11,17 @@ do
   test -d "$dir" || continue
   echo -- $dir
   cd $dir
-if [[ `git status --porcelain` ]]; then
-  # changes
-  LOCALCHANGES=1
-else
-  # no changes
-  LOCALCHANGES=0
-fi
+  if [ -z "$(ls -A .)" ]; then
+    echo -- $moduleDir -- git submodule update --init --recursive --remote .
+    git submodule update --init --recursive --remote .
+  fi
+  if [[ `git status --porcelain` ]]; then
+    # changes
+    LOCALCHANGES=1
+  else
+    # no changes
+    LOCALCHANGES=0
+  fi
   if [ $LOCALCHANGES == 1 ]
   then
     echo -- $dir -- stashing

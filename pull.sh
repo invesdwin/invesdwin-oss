@@ -4,7 +4,6 @@ cd "$(dirname "$0")"
 
 git pull
 git submodule init
-git submodule foreach 'git fetch origin; git checkout $(git branch --show-current); git submodule update --init --recursive .'
 
 OUTER_BRANCH=$(git branch --show-current)
 if [ -z "$OUTER_BRANCH" ]
@@ -18,6 +17,10 @@ do
   test -d "$dir" || continue
   echo -- $dir
   cd $dir
+  if [ -z "$(ls -A .)" ]; then
+    echo -- $moduleDir -- git submodule update --init --recursive --remote .
+    git submodule update --init --recursive --remote .
+  fi
   if [[ `git status --porcelain` ]]; then
     # changes
     LOCALCHANGES=1
