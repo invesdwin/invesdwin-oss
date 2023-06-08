@@ -19,13 +19,13 @@ do
   test -d "$dir" || continue
   echo -- $dir
   cd $dir
-if [[ `git status --porcelain` ]]; then
-  # changes
-  LOCALCHANGES=1
-else
-  # no changes
-  LOCALCHANGES=0
-fi
+  if [[ `git status --porcelain` ]]; then
+    # changes
+    LOCALCHANGES=1
+  else
+    # no changes
+    LOCALCHANGES=0
+  fi
   if [ $LOCALCHANGES == 1 ]
   then
     echo -- $dir -- stashing
