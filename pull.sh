@@ -4,6 +4,7 @@ cd "$(dirname "$0")"
 
 git pull
 git submodule init
+git submodule foreach 'git fetch origin; git checkout $(git branch --show-current); git submodule update --init --recursive .'
 
 OUTER_BRANCH=$(git branch --show-current)
 if [ -z "$OUTER_BRANCH" ]
