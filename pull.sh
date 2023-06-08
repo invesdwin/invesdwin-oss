@@ -3,7 +3,9 @@
 cd "$(dirname "$0")"
 
 git pull
-git submodule update --init --recursive --remote
+#https://stackoverflow.com/questions/10168449/git-update-submodules-recursively
+git submodule update --init --remote
+git submodule foreach 'git fetch origin; git submodule update --init --recursive'
 
 OUTER_BRANCH=$(git branch --show-current)
 if [ -z "$OUTER_BRANCH" ]
