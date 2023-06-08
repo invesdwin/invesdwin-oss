@@ -12,8 +12,8 @@ do
   echo -- $dir
   cd $dir
   if [ -z "$(ls -A .)" ]; then
-    echo -- $moduleDir -- git submodule update --init --recursive --remote .
-    git submodule update --init --recursive --remote .
+    echo -- $moduleDir -- git fetch origin; git checkout $(git branch --show-current); git submodule update --init --recursive --remote .
+    git fetch origin; git checkout $(git branch --show-current); git submodule update --init --recursive --remote .
   fi
   if [[ `git status --porcelain` ]]; then
     # changes
