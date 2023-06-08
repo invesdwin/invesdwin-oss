@@ -1,5 +1,11 @@
 #! /bin/bash
 
+OUTER_BRANCH=$(git branch --show-current)
+if [ -z "$OUTER_BRANCH" ]
+then
+  OUTER_BRANCH=$(git rev-parse --abbrev-ref HEAD)
+fi
+
 for dir in *
 do
   test -d "$dir" || continue
@@ -17,14 +23,23 @@ fi
     echo -- $dir -- stashing
     git stash
   fi
-  echo -- $dir -- checking out master
   if [ $dir == "fast-serialization" ]
   then
+    echo -- $dir -- git checkout java8backport
     git switch -c java8backport origin/java8backport
     git checkout java8backport
-  
   else
-    git checkout $(git rev-parse --abbrev-ref HEAD)
+    BRANCH=$(git branch --show-current)
+    if [ -z "$BRANCH" ]
+  	then
+    	BRANCH=$(git rev-parse --abbrev-ref HEAD)
+  	fi
+  	if [ -z "$BRANCH" ]
+  	then
+    	BRANCH=$OUTER_BRANCH
+  	fi
+  	echo -- $moduleDir -- git checkout $BRANCH
+  	git checkout $BRANCH
   fi
   echo -- $dir -- pulling
   git pull

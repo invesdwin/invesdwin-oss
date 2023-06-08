@@ -7,6 +7,11 @@ git pull
 git submodule update --init --remote
 git submodule foreach 'git fetch origin; git checkout master || git checkout main; git submodule update --init --recursive'
 
+OUTER_BRANCH=$(git branch --show-current)
+if [ -z "$OUTER_BRANCH" ]
+then
+  OUTER_BRANCH=$(git rev-parse --abbrev-ref HEAD)
+fi
 
 for dir in *
 do
@@ -26,8 +31,17 @@ fi
     echo -- $dir -- stashing
     git stash
   fi
-  echo -- $dir -- checking out master
-  git checkout master
+  BRANCH=$(git branch --show-current)
+  if [ -z "$BRANCH" ]
+  then
+    BRANCH=$(git rev-parse --abbrev-ref HEAD)
+  fi
+  if [ -z "$BRANCH" ]
+  then
+    BRANCH=$OUTER_BRANCH
+  fi
+  echo -- $moduleDir -- git checkout $BRANCH
+  git checkout $BRANCH
   echo -- $dir -- pulling
   git pull
   if [ $LOCALCHANGES == 1 ]
