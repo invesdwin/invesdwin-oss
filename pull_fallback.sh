@@ -3,4 +3,4 @@
 cd "$(dirname "$0")"
 
 git pull
-git submodule update --init --remote --recursive
+git submodule foreach 'git fetch origin; git checkout master || git checkout main; git submodule update --init --recursive; git pull'
