@@ -5,7 +5,7 @@ cd "$(dirname "$0")"
 git pull
 git submodule init
 
-OUTER_BRANCH=$(git branch --show-current)
+OUTER_BRANCH=$(git branch --show-current 2> /dev/null)
 if [ -z "$OUTER_BRANCH" ]
 then
   OUTER_BRANCH=$(git rev-parse --abbrev-ref HEAD)
@@ -33,7 +33,7 @@ do
     echo -- $dir -- stashing
     git stash
   fi
-  BRANCH=$(git branch --show-current)
+  BRANCH=$(git branch --show-current 2> /dev/null)
   if [ -z "$BRANCH" ]
   then
     BRANCH=$(git rev-parse --abbrev-ref HEAD)
