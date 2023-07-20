@@ -1,6 +1,6 @@
 #! /bin/bash
 
-OUTER_BRANCH=$(git branch --show-current)
+OUTER_BRANCH=$(git branch --show-current 2> /dev/null)
 if [ -z "$OUTER_BRANCH" ]
 then
   OUTER_BRANCH=$(git rev-parse --abbrev-ref HEAD)
@@ -33,7 +33,7 @@ do
     git switch -c java8backport origin/java8backport
     git checkout java8backport
   else
-    BRANCH=$(git branch --show-current)
+    BRANCH=$(git branch --show-current 2> /dev/null)
     if [ -z "$BRANCH" ]
   	then
     	BRANCH=$(1)
