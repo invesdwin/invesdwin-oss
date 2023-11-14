@@ -2,6 +2,11 @@
 
 cd "$(dirname "$0")"
 
+if [ -z "$(ls -A invesdwin-bom)" ]
+then
+   ./pull_fallback.sh
+fi
+
 git pull
 git submodule init
 
