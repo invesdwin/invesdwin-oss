@@ -99,3 +99,6 @@
 [submodule "dependencies/sardine"]
 	path = dependencies/sardine
 	url = https://github.com/subes/sardine.git
+[submodule "invesdwin-context-haskell"]
+	path = invesdwin-context-haskell
+	url = https://github.com/invesdwin/invesdwin-context-haskell.git
