@@ -23,7 +23,7 @@ fi
     echo -- $dir -- stashing
     git stash
   fi
-  REV=$(git rev-list -n 1 --before="$DATE" master)
+  REV=$(git rev-list -n 1 --before="$DATE" main)
   echo -- $dir -- checking out "$DATE" as "$REV"
   git checkout $REV
   echo -- $dir -- pulling
