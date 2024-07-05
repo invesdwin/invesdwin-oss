@@ -35,18 +35,23 @@ do
   else
     BRANCH=$(git branch --show-current 2> /dev/null)
     if [ -z "$BRANCH" ]
-  	then
-    	BRANCH=$(1)
-  	fi
-  	if [ -z "$BRANCH" ]
-  	then
-    	BRANCH=$OUTER_BRANCH
-  	fi
-  	echo -- $moduleDir -- git checkout $BRANCH
-  	git checkout $BRANCH
+    then
+      BRANCH=$(git rev-parse --abbrev-ref HEAD)
+    fi
+    if [ -z "$BRANCH" ]
+    then
+      BRANCH=$OUTER_BRANCH
+    fi
+    echo -- $moduleDir -- git checkout $BRANCH
+    git checkout $BRANCH
   fi
   echo -- $dir -- pulling
   git pull
+  if $(git rev-parse --is-shallow-repository); then
+    echo -- $dir -- fetching shallow branches
+    git remote set-branches origin '*'
+    git fetch -v --depth=1
+  fi
   if [ $LOCALCHANGES == 1 ]
   then
     echo -- $dir -- popping stash
