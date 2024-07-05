@@ -51,6 +51,11 @@ do
   git checkout $BRANCH
   echo -- $dir -- pulling
   git pull
+  if $(git rev-parse --is-shallow-repository); then
+    echo -- $dir -- fetching shallow branches
+    git remote set-branches origin '*'
+    git fetch -v --depth=1
+  fi
   if [ $LOCALCHANGES == 1 ]
   then
     echo -- $dir -- popping stash
