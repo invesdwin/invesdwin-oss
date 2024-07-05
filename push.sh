@@ -13,5 +13,5 @@ do
   cd ..
 done
 
-cd dependencies
-./push.sh
+#cd dependencies
+#./push.sh
