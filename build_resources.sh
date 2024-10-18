@@ -1,1 +1,1 @@
-mvn process-resources -T1C
+mvn process-resources process-test-resources -T1C
