@@ -23,8 +23,8 @@ do
   echo -- $dir
   cd $dir
   if [ -z "$(ls -A .)" ]; then
-    echo -- $moduleDir -- git submodule update --init --recursive --remote .; git checkout master || git checkout main;
-    git submodule update --init --recursive --remote .; git checkout master || git checkout main;
+    echo -- $moduleDir -- git submodule update --init --recursive --remote .; git checkout $OUTER_BRANCH
+    git submodule update --init --recursive --remote .; git checkout $OUTER_BRANCH
   fi
   if [[ `git status --porcelain` ]]; then
     # changes
@@ -51,6 +51,11 @@ do
   git checkout $BRANCH
   echo -- $dir -- pulling
   git pull
+  if $(git rev-parse --is-shallow-repository); then
+    echo -- $dir -- fetching shallow branches
+    git remote set-branches origin '*'
+    git fetch -v --depth=1
+  fi
   if [ $LOCALCHANGES == 1 ]
   then
     echo -- $dir -- popping stash
