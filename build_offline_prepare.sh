@@ -101,13 +101,9 @@ echo "-- invesdwin-context-security-parent"
 mvn clean install -DskipTests -N -e -f invesdwin-context-security/invesdwin-context-security-parent/pom.xml
 echo "-- invesdwin-context-integration-parent"
 mvn clean install -DskipTests -N -e -f invesdwin-context-integration/invesdwin-context-integration-parent/pom.xml
-echo "-- invesdwin-context-r-parent"
-mvn clean install -DskipTests -N -e -f invesdwin-context-r/invesdwin-context-r-parent/pom.xml
-echo "-- invesdwin-context-python-parent"
-mvn clean install -DskipTests -N -e -f invesdwin-context-python/invesdwin-context-python-parent/pom.xml
-echo "-- invesdwin-context-matlab-parent"
-mvn clean install -DskipTests -N -e -f invesdwin-context-matlab/invesdwin-context-matlab-parent/pom.xml
 echo "-- invesdwin-context-client-parent"
 mvn clean install -DskipTests -N -e -f invesdwin-context-client/invesdwin-context-client-parent/pom.xml
+echo "-- invesdwin-scripting-parent"
+mvn clean install -DskipTests -N -e -f invesdwin-scripting/invesdwin-scripting-parent/pom.xml
 echo "-- invesdwin-webproxy-parent"
 mvn clean install -DskipTests -N -e -f invesdwin-webproxy/invesdwin-webproxy-parent/pom.xml

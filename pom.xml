@@ -26,12 +26,8 @@
 		<module>invesdwin-context-integration/invesdwin-context-integration-parent</module>
 		<module>invesdwin-context-persistence/invesdwin-context-persistence-parent</module>
 		<module>invesdwin-context-security/invesdwin-context-security-parent</module>
-		<module>invesdwin-context-r/invesdwin-context-r-parent</module>
-		<module>invesdwin-context-python/invesdwin-context-python-parent</module>
-		<module>invesdwin-context-matlab/invesdwin-context-matlab-parent</module>
-		<module>invesdwin-context-julia/invesdwin-context-julia-parent</module>
-		<module>invesdwin-context-haskell/invesdwin-context-haskell-parent</module>
 		<module>invesdwin-context-client/invesdwin-context-client-parent</module>
+		<module>invesdwin-scripting/invesdwin-scripting-parent</module>
 		<module>invesdwin-webproxy/invesdwin-webproxy-parent</module>
 	</modules>
 
