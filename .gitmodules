@@ -1,47 +1,47 @@
 [submodule "invesdwin-context"]
 	path = invesdwin-context
 	url = https://github.com/invesdwin/invesdwin-context.git
-	branch = master
+	branch = main
 [submodule "invesdwin-bom"]
 	path = invesdwin-bom
 	url = https://github.com/invesdwin/invesdwin-bom.git
-	branch = master
+	branch = main
 [submodule "invesdwin-maven-plugin"]
 	path = invesdwin-maven-plugin
 	url = https://github.com/invesdwin/invesdwin-maven-plugin.git
-	branch = master
+	branch = main
 [submodule "invesdwin-util"]
 	path = invesdwin-util
 	url = https://github.com/invesdwin/invesdwin-util.git
-	branch = master
+	branch = main
 [submodule "invesdwin-nowicket"]
 	path = invesdwin-nowicket
 	url = https://github.com/invesdwin/invesdwin-nowicket.git
-	branch = master
+	branch = main
 [submodule "invesdwin-norva"]
 	path = invesdwin-norva
 	url = https://github.com/invesdwin/invesdwin-norva.git
-	branch = master
+	branch = main
 [submodule "invesdwin-aspects"]
 	path = invesdwin-aspects
 	url = https://github.com/invesdwin/invesdwin-aspects.git
-	branch = master
+	branch = main
 [submodule "invesdwin-instrument"]
 	path = invesdwin-instrument
 	url = https://github.com/invesdwin/invesdwin-instrument.git
-	branch = master
+	branch = main
 [submodule "invesdwin-checkstyle-plugin"]
 	path = invesdwin-checkstyle-plugin
 	url = https://github.com/invesdwin/invesdwin-checkstyle-plugin.git
-	branch = master
+	branch = main
 [submodule "invesdwin-context-persistence"]
 	path = invesdwin-context-persistence
 	url = https://github.com/invesdwin/invesdwin-context-persistence.git
-	branch = master
+	branch = main
 [submodule "invesdwin-context-security"]
 	path = invesdwin-context-security
 	url = https://github.com/invesdwin/invesdwin-context-security.git
-	branch = master
+	branch = main
 [submodule "invesdwin-context-integration"]
 	path = invesdwin-context-integration
 	url = https://github.com/invesdwin/invesdwin-context-integration.git
