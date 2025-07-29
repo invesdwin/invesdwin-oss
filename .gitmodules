@@ -90,3 +90,6 @@
 [submodule "invesdwin-scripting"]
 	path = invesdwin-scripting
 	url = https://github.com/invesdwin/invesdwin-scripting.git
+[submodule "dependencies/JCOOL"]
+	path = dependencies/JCOOL
+	url = https://github.com/subes/JCOOL.git
