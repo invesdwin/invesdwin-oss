@@ -71,6 +71,11 @@ cd dependencies/dynamicreports/
 mvn clean install -DskipTests -T1C
 cd ../../
 
+echo "-- JCOOL"
+cd dependencies/JCOOL/jcool
+mvn clean install -DskipTests -T1C
+cd ../../../
+
 echo "-- invesdwin-bom"
 mvn clean install -DskipTests -N -e -f invesdwin-bom/invesdwin-bom/pom.xml
 echo "-- invesdwin-maven-plugin"
