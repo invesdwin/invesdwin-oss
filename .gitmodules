@@ -48,7 +48,7 @@
 	url = https://github.com/subes/javaoctave.git
 [submodule "dependencies/ezdb"]
 	path = dependencies/ezdb
-	url = https://github.com/criccomini/ezdb.git
+	url = https://github.com/subes/ezdb.git
 [submodule "dependencies/jdeoptim"]
 	path = dependencies/jdeoptim
 	url = https://github.com/subes/jdeoptim.git
@@ -82,3 +82,6 @@
 [submodule "dependencies/JCOOL"]
 	path = dependencies/JCOOL
 	url = https://github.com/subes/JCOOL.git
+[submodule "dependencies/leveldb"]
+	path = dependencies/leveldb
+	url = https://github.com/subes/leveldb.git
