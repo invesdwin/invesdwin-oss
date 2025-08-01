@@ -82,3 +82,6 @@
 [submodule "dependencies/leveldb"]
 	path = dependencies/leveldb
 	url = https://github.com/subes/leveldb.git
+[submodule "dependencies/ezdb"]
+	path = dependencies/ezdb
+	url = https://github.com/subes/ezdb.git
