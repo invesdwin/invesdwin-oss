@@ -76,6 +76,16 @@ cd dependencies/JCOOL/jcool
 mvn clean install -DskipTests -T1C
 cd ../../../
 
+echo "-- leveldb"
+cd dependencies/leveldb/
+mvn clean install -DskipTests -T1C
+cd ../../
+
+echo "-- ezdb"
+cd dependencies/ezdb/
+mvn clean install -DskipTests -T1C
+cd ../../
+
 echo "-- invesdwin-bom"
 mvn clean install -DskipTests -N -e -f invesdwin-bom/invesdwin-bom/pom.xml
 echo "-- invesdwin-maven-plugin"
