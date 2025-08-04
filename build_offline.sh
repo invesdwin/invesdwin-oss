@@ -2,7 +2,8 @@
 set -e
 cd "$(dirname "$0")"
 
-./build_offline_prepare.sh
+./build_offline_dependencies.sh
+./build_offline_parents.sh
 
 # builds will fail at some point when missing artifacts are encountered, 
 # these need to be sourced from other repos with a custom settings.xml, 
