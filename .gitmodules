@@ -1,47 +1,36 @@
 [submodule "invesdwin-context"]
 	path = invesdwin-context
 	url = https://github.com/invesdwin/invesdwin-context.git
-	branch = master
 [submodule "invesdwin-bom"]
 	path = invesdwin-bom
 	url = https://github.com/invesdwin/invesdwin-bom.git
-	branch = master
 [submodule "invesdwin-maven-plugin"]
 	path = invesdwin-maven-plugin
 	url = https://github.com/invesdwin/invesdwin-maven-plugin.git
-	branch = master
 [submodule "invesdwin-util"]
 	path = invesdwin-util
 	url = https://github.com/invesdwin/invesdwin-util.git
-	branch = master
 [submodule "invesdwin-nowicket"]
 	path = invesdwin-nowicket
 	url = https://github.com/invesdwin/invesdwin-nowicket.git
-	branch = master
 [submodule "invesdwin-norva"]
 	path = invesdwin-norva
 	url = https://github.com/invesdwin/invesdwin-norva.git
-	branch = master
 [submodule "invesdwin-aspects"]
 	path = invesdwin-aspects
 	url = https://github.com/invesdwin/invesdwin-aspects.git
-	branch = master
 [submodule "invesdwin-instrument"]
 	path = invesdwin-instrument
 	url = https://github.com/invesdwin/invesdwin-instrument.git
-	branch = master
 [submodule "invesdwin-checkstyle-plugin"]
 	path = invesdwin-checkstyle-plugin
 	url = https://github.com/invesdwin/invesdwin-checkstyle-plugin.git
-	branch = master
 [submodule "invesdwin-context-persistence"]
 	path = invesdwin-context-persistence
 	url = https://github.com/invesdwin/invesdwin-context-persistence.git
-	branch = master
 [submodule "invesdwin-context-security"]
 	path = invesdwin-context-security
 	url = https://github.com/invesdwin/invesdwin-context-security.git
-	branch = master
 [submodule "invesdwin-context-integration"]
 	path = invesdwin-context-integration
 	url = https://github.com/invesdwin/invesdwin-context-integration.git
@@ -57,9 +46,6 @@
 [submodule "dependencies/javaoctave"]
 	path = dependencies/javaoctave
 	url = https://github.com/subes/javaoctave.git
-[submodule "dependencies/ezdb"]
-	path = dependencies/ezdb
-	url = https://github.com/criccomini/ezdb.git
 [submodule "dependencies/jdeoptim"]
 	path = dependencies/jdeoptim
 	url = https://github.com/subes/jdeoptim.git
@@ -90,3 +76,12 @@
 [submodule "invesdwin-scripting"]
 	path = invesdwin-scripting
 	url = https://github.com/invesdwin/invesdwin-scripting.git
+[submodule "dependencies/JCOOL"]
+	path = dependencies/JCOOL
+	url = https://github.com/subes/JCOOL.git
+[submodule "dependencies/leveldb"]
+	path = dependencies/leveldb
+	url = https://github.com/subes/leveldb.git
+[submodule "dependencies/ezdb"]
+	path = dependencies/ezdb
+	url = https://github.com/subes/ezdb.git
