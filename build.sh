@@ -1,1 +1,1 @@
-mvn clean install -DskipTests -T1C
+mvn clean install -DskipTests -T1C $*
