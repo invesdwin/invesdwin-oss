@@ -38,7 +38,7 @@ do
   if [ $LOCALCHANGES == 1 ]
   then
     echo -- $dir -- stashing
-    git stash
+    git stash -u
   fi
   BRANCH=$(git branch --show-current 2> /dev/null)
   if [ -z "$BRANCH" ]
