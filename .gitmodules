@@ -85,3 +85,6 @@
 [submodule "dependencies/ezdb"]
 	path = dependencies/ezdb
 	url = https://github.com/subes/ezdb.git
+[submodule "dependencies/JPPF"]
+	path = dependencies/JPPF
+	url = https://github.com/subes/JPPF
