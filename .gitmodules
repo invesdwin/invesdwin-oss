@@ -88,3 +88,6 @@
 [submodule "dependencies/JPPF"]
 	path = dependencies/JPPF
 	url = https://github.com/subes/JPPF
+[submodule "dependencies/ta-lib"]
+	path = dependencies/ta-lib
+	url = https://github.com/subes/ta-lib.git
