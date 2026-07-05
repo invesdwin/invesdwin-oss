@@ -5,6 +5,8 @@ echo "-- invesdwin-bom"
 mvn -B clean deploy -DskipTests -N -e -f invesdwin-bom/invesdwin-bom/pom.xml
 echo "-- invesdwin-maven-plugin"
 mvn -B clean deploy -DskipTests -T1C -e -f invesdwin-maven-plugin/invesdwin-maven-plugin-parent/pom.xml
+echo "-- invesdwin-util-parent"
+mvn -B clean deploy -DskipTests -N -e -f invesdwin-util/invesdwin-util-parent/pom.xml
 echo "-- invesdwin-nowicket-parent"
 mvn -B clean deploy -DskipTests -N -e -f invesdwin-nowicket/invesdwin-nowicket-parent/pom.xml
 echo "-- invesdwin-context-parent"
