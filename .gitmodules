@@ -91,3 +91,6 @@
 [submodule "dependencies/ta-lib"]
 	path = dependencies/ta-lib
 	url = https://github.com/subes/ta-lib.git
+[submodule "dependencies/mpj-express"]
+	path = dependencies/mpj-express
+	url = https://github.com/subes/mpj-express.git
