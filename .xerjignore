@@ -73,3 +73,14 @@ jacoco.exec
 # --- data, not code ---
 *.csv
 *.pdf
+
+# --- vector graphics: sniffed as tabular data, and it breaks search ---------
+# autoindex reads an SVG's <defs>, <circle cx> and <g rect> elements as table
+# columns and builds a dataset out of them, so the index ends up with a `defs`
+# (or g_rect_x / g_id) field that is an OBJECT rather than text. A `multi_match`
+# over body/defs then tries to numeric-parse the query string, and EVERY search
+# against that wildcard fails — HTTP 400 `For input string: "<your question>"` —
+# not just the SVG hits. Observed on the jenetics corpus (90 SVGs under
+# doc-files/, 38 of 40 indices poisoned that way).
+*.svg
+*.svgz
