@@ -23,3 +23,88 @@
 /jacoco.exec
 /.metadata
 /.vscode
+
+# --- local AI coding-tool state ---------------------------------------------
+# Per-developer, not project content. These steer whichever assistant the
+# developer runs, and several hold machine-specific paths or credentials
+# (.mcp.json, .claude/settings.local.json, .codex/auth.json), so they are
+# ignored deliberately: one developer's tool choice should not show up in
+# everyone else's status output, nor get committed by accident.
+#
+# Patterns are unanchored, so they also match inside nested module projects.
+#
+# AGENTS.md and CLAUDE.md are included on purpose even though AGENTS.md is an
+# emerging cross-tool convention: the content is XERJ-specific and only means
+# something to developers who opted into that tooling. The policy is total: no
+# AI-tool configuration is versioned here, including files a tool itself
+# considers shareable. `git check-ignore -v <path>` shows which rule bites.
+#
+# Repeated in performancetrader-workspace, invesdwin-workspace and
+# invesdwin-oss because a developer can clone any one of them on its own.
+
+# Claude Code
+.claude/
+CLAUDE.md
+.mcp.json
+
+# OpenAI Codex, and the AGENTS.md convention (Codex, Amp, Devin, Zed, ...)
+AGENTS.md
+.codex/
+
+# Cursor
+.cursor/
+.cursorrules
+.cursorignore
+
+# Kilo Code, Roo Code, Cline
+# Deliberately total. .kilo/kilo.jsonc is a file Kilo Code treats as shareable
+# project config (its own .kilo/.gitignore excludes only the rest) and is still
+# excluded here — a tool's opinion about what is shareable does not make it
+# project content. Same reasoning for every other tool below.
+.kilo/
+.kilocode/
+.kilocodeignore
+.roo/
+.rooignore
+.clinerules/
+.clinerules
+
+# GitHub Copilot
+.github/copilot-instructions.md
+.github/instructions/
+
+# Gemini CLI, Qwen Code, iFlow
+GEMINI.md
+.gemini/
+.geminiignore
+QWEN.md
+.qwen/
+IFLOW.md
+.iflow/
+
+# Windsurf
+.windsurf/
+.windsurfrules
+.windsurfignore
+
+# Aider
+.aider.conf.yml
+.aiderignore
+
+# Continue, Junie (JetBrains), OpenHands, Crush, opencode, Cody, Tabnine, Goose
+.continue/
+.junie/
+.openhands/
+.crush/
+.opencode/
+opencode.json
+.cody/
+.tabnine/
+.goosehints
+
+# --- IDE, unanchored ----------------------------------------------------------
+# The entries above are root-anchored, so a nested module project (this repo
+# carries ~30 submodule dependencies) still shows its own .idea/ and *.iml.
+# These match at any depth.
+.idea/
+*.iml
