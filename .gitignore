@@ -69,9 +69,11 @@ AGENTS.md
 .clinerules/
 .clinerules
 
-# GitHub Copilot
-.github/copilot-instructions.md
-.github/instructions/
+# GitHub Copilot, VS Code, Vite - and all of .github (issue templates,
+# workflows, everything; deliberately total - see policy note above)
+.github/
+.vscode/
+.vite/
 
 # Gemini CLI, Qwen Code, iFlow
 GEMINI.md
